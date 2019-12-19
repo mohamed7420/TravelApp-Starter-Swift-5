@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TopLocationCollectionViewCell" customModule="TravelApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="345" height="376"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="345" height="376"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kcr-5u-8Aa">
+                        <rect key="frame" x="10" y="10" width="325" height="356"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="szd-gE-Uau">
+                                <rect key="frame" x="0.0" y="0.0" width="325" height="249.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="szd-gE-Uau" secondAttribute="height" multiplier="69:53" id="JL0-Mp-Zxr"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="szd-gE-Uau" firstAttribute="leading" secondItem="kcr-5u-8Aa" secondAttribute="leading" id="HB2-Gw-PdY"/>
+                            <constraint firstAttribute="trailing" secondItem="szd-gE-Uau" secondAttribute="trailing" id="HQ2-9O-hal"/>
+                            <constraint firstItem="szd-gE-Uau" firstAttribute="top" secondItem="kcr-5u-8Aa" secondAttribute="top" id="SvH-ys-M0d"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="kcr-5u-8Aa" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="FRj-tP-PcM"/>
+                <constraint firstItem="kcr-5u-8Aa" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="KsA-aT-bdN"/>
+                <constraint firstAttribute="bottom" secondItem="kcr-5u-8Aa" secondAttribute="bottom" constant="10" id="Vfs-RJ-gYc"/>
+                <constraint firstAttribute="trailing" secondItem="kcr-5u-8Aa" secondAttribute="trailing" constant="10" id="ZUM-tc-hLu"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="193" height="184"/>
+            <connections>
+                <outlet property="locationImage" destination="szd-gE-Uau" id="2fY-0D-FZ7"/>
+                <outlet property="mainView" destination="kcr-5u-8Aa" id="eRy-wa-bYR"/>
+            </connections>
+            <point key="canvasLocation" x="19.565217391304348" y="61.607142857142854"/>
+        </collectionViewCell>
+    </objects>
+</document>
